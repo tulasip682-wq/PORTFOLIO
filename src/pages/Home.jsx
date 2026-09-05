@@ -89,15 +89,17 @@ const Home = () => {
     }
   ];
 
+  const GITHUB_CERT_BASE = 'https://raw.githubusercontent.com/tulasip682-wq/PORTFOLIO/main/public/certificates';
+
   const certificates = [
-    { title: 'HackerRank Java (Basic)', issuer: 'HackerRank', credentialUrl: '/certificates/Hackerrank - Java.pdf' },
-    { title: 'EY Techathon Participation', issuer: 'Ernst & Young', credentialUrl: '/certificates/ey hackathon.pdf' },
-    { title: 'Data Analytics Masterclass', issuer: 'Data Analytics Academy', credentialUrl: '/certificates/Data Analytics - Masterclass Certificate.pdf' },
-    { title: 'HackerRank Problem Solving (Basic)', issuer: 'HackerRank', credentialUrl: '/certificates/Problem Solving(Basic) - Hackerrank.pdf' },
-    { title: 'Deloitte Job Simulation', issuer: 'Deloitte', credentialUrl: '/certificates/Deloitte certificate.pdf' },
-    { title: 'UX Job Simulation', issuer: 'Lloyds Banking Group', credentialUrl: '/certificates/LLYODS Banking Groups-UX Certificate.pdf' },
-    { title: 'Java Developer Internship Completion', issuer: 'Internship Completion', credentialUrl: '/certificates/Internship Completion Certificate.pdf' },
-    { title: 'Java Developer Internship Offer', issuer: 'Internship Offer', credentialUrl: '/certificates/Internship Offer Letter Certificate.pdf' }
+    { title: 'HackerRank Java (Basic)', issuer: 'HackerRank', credentialUrl: `${GITHUB_CERT_BASE}/Hackerrank%20-%20Java.pdf` },
+    { title: 'EY Techathon Participation', issuer: 'Ernst & Young', credentialUrl: `${GITHUB_CERT_BASE}/ey%20hackathon.pdf` },
+    { title: 'Data Analytics Masterclass', issuer: 'Data Analytics Academy', credentialUrl: `${GITHUB_CERT_BASE}/Data%20Analytics%20-%20Masterclass%20Certificate.pdf` },
+    { title: 'HackerRank Problem Solving (Basic)', issuer: 'HackerRank', credentialUrl: `${GITHUB_CERT_BASE}/Problem%20Solving(Basic)%20-%20Hackerrank.pdf` },
+    { title: 'Deloitte Job Simulation', issuer: 'Deloitte', credentialUrl: `${GITHUB_CERT_BASE}/Deloitte%20certificate.pdf` },
+    { title: 'UX Job Simulation', issuer: 'Lloyds Banking Group', credentialUrl: `${GITHUB_CERT_BASE}/LLYODS%20Banking%20Groups-UX%20Certificate.pdf` },
+    { title: 'Java Developer Internship Completion', issuer: 'Internship Completion', credentialUrl: `${GITHUB_CERT_BASE}/Internship%20Completion%20Certificate.pdf` },
+    { title: 'Java Developer Internship Offer', issuer: 'Internship Offer', credentialUrl: `${GITHUB_CERT_BASE}/Internship%20Offer%20Letter%20Certificate.pdf` }
   ];
 
   const achievements = [
@@ -221,7 +223,7 @@ const Home = () => {
               </a>
               
               <a
-                href="/certificates/Internship Completion Certificate.pdf"
+                href={`${GITHUB_CERT_BASE}/Internship%20Completion%20Certificate.pdf`}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 px-6 py-3 rounded-xl bg-transparent border border-dashed border-slate-500 hover:border-slate-300 text-slate-300 hover:text-white font-semibold text-sm transition-all"
@@ -249,7 +251,7 @@ const Home = () => {
                 CS Student & Aspiring Software Engineer
               </h3>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                I am a third-year **Computer Science with Data Analytics** undergraduate studying at **KPR College of Arts Science and Research (2024 - 2027)**. I combine programming logic with data analytics to engineer beautiful and performance-oriented software structures.
+                I am a third-year <strong className="text-white font-semibold">Computer Science with Data Analytics</strong> undergraduate studying at <strong className="text-white font-semibold">KPR College of Arts Science and Research (2024 - 2027)</strong>. I combine programming logic with data analytics to engineer beautiful and performance-oriented software structures.
               </p>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
                 My primary expertise lies in creating MERN (MongoDB, Express, React, Node.js) stack applications and building core object-oriented structures with Java. I love translating numbers and data charts into meaningful, real-time client dashboards.
